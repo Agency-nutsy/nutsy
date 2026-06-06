@@ -1,0 +1,187 @@
+.testimonials {
+  background: var(--color-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.grain {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at center, rgba(212,175,55,0.03) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Header */
+.headerRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--space-10);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  text-align: center;
+  justify-content: center;
+}
+
+.headerLeft {
+  max-width: 600px;
+}
+
+.headerLeft .section-title {
+  margin-bottom: 0;
+}
+
+/* Continuous Marquee Track */
+.carouselWrap {
+  margin-bottom: var(--space-12);
+  /* Fade edges for smooth entry/exit */
+  mask-image: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+  padding: var(--space-2) 0;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  gap: var(--space-6);
+  width: max-content;
+  /* Smooth infinite CSS animation */
+  animation: marqueeSlide 35s linear infinite;
+  padding: 0 var(--space-4);
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeSlide {
+  0% { transform: translateX(0); }
+  /* Slide by exactly half of the total duplicated width */
+  /* Because gap is added to each element, we translate to -50% to precisely match up with the second half */
+  100% { transform: translateX(calc(-50% - (var(--space-6) / 2))); }
+}
+
+/* Review Card */
+.card {
+  width: 350px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-gold);
+  box-shadow: var(--shadow-gold);
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+  padding: var(--space-6) var(--space-6) 0;
+}
+
+.star {
+  color: var(--color-gold);
+  font-size: 1rem;
+}
+
+.quoteDecor {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--color-nude);
+  line-height: 1;
+  padding: 0 var(--space-6);
+  margin-top: -10px;
+}
+
+.text {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  font-style: italic;
+  line-height: 1.7;
+  padding: 0 var(--space-6) var(--space-4);
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-divider);
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+  padding: var(--space-4) var(--space-6);
+}
+
+.name {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.service {
+  font-size: var(--text-xs);
+  color: var(--color-gold);
+  background: var(--color-nude-light);
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Google Rating Bar */
+.googleBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  padding: var(--space-6);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  flex-wrap: wrap;
+}
+
+.googleRating {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.googleStar {
+  font-size: 2rem;
+}
+
+.googleScore {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
+.googleCount {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 280px;
+  }
+
+  .googleBar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .googleRating {
+    justify-content: center;
+  }
+}

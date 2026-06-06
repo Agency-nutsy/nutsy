@@ -1,0 +1,347 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: var(--nav-height);
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.bgGlow {
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, var(--color-nude-light) 0%, transparent 70%);
+  opacity: 0.8;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-16);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+.left {
+  max-width: 600px;
+}
+
+.locationLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-gold);
+  margin-bottom: var(--space-6);
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.goldLine {
+  width: 40px;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  line-height: 1.2;
+  color: var(--color-text);
+  margin-bottom: var(--space-6);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.line {
+  display: block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUpLine 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.goldItalic {
+  font-style: italic;
+  color: var(--color-gold);
+  font-weight: 500;
+  padding-right: 0.1em;
+}
+
+.subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-8);
+  max-width: 500px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.6s;
+  letter-spacing: 0.02em;
+}
+
+.ctas {
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-12);
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.8s;
+  flex-wrap: wrap;
+}
+
+/* Trust Stats */
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 1s;
+  background: var(--color-white);
+  padding: var(--space-4) 0;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+  width: 100%;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  padding: 0 var(--space-2);
+}
+
+.statDivider {
+  width: 1px;
+  height: 40px;
+  background: var(--color-divider);
+  flex-shrink: 0;
+}
+
+/* Right Overlapping Grid */
+.right {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.imageGrid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.orb1 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 300px;
+  height: 300px;
+  background: var(--color-gold);
+  filter: blur(100px);
+  opacity: 0.15;
+  border-radius: 50%;
+  animation: float 8s ease-in-out infinite;
+}
+
+.orb2 {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  background: var(--color-nude);
+  filter: blur(80px);
+  opacity: 0.3;
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite alternate-reverse;
+}
+
+.imgWrap {
+  position: absolute;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.imgWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.imgWrap:hover img {
+  transform: scale(1.05);
+}
+
+/* 1. Main Large Image */
+.imgMain {
+  width: 60%;
+  height: 75%;
+  top: 10%;
+  left: 10%;
+  z-index: 2;
+  animation-delay: 0.4s;
+}
+
+/* 2. Top Right Accent Image */
+.imgTopRight {
+  width: 35%;
+  height: 40%;
+  top: 0;
+  right: 5%;
+  z-index: 1;
+  animation-delay: 0.6s;
+}
+
+/* 3. Bottom Left Accent Image */
+.imgBottomLeft {
+  width: 45%;
+  height: 35%;
+  bottom: 0;
+  right: 15%;
+  z-index: 3;
+  border: 6px solid var(--color-bg);
+  animation-delay: 0.8s;
+}
+
+/* Floating Badges */
+.floatingBadge1, .floatingBadge2 {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+  padding: 10px 20px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  box-shadow: var(--shadow-lg);
+  z-index: 4;
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.badgeIcon {
+  font-size: 1.2rem;
+}
+
+.floatingBadge1 {
+  top: 25%;
+  left: -5%;
+  animation-delay: 1s;
+  animation: float 4s ease-in-out infinite, fadeUp 1s ease forwards 1s;
+}
+
+.floatingBadge2 {
+  bottom: 20%;
+  right: -5%;
+  animation-delay: 1.2s;
+  animation: float 5s ease-in-out infinite alternate-reverse, fadeUp 1s ease forwards 1.2s;
+}
+
+
+/* Animations */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUpLine {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-16);
+  }
+
+  .left {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .locationLabel {
+    justify-content: center;
+  }
+
+  .subtitle {
+    margin: 0 auto var(--space-8);
+  }
+
+  .ctas {
+    justify-content: center;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .right {
+    height: 450px;
+  }
+  
+  .imgMain {
+    width: 65%;
+  }
+
+  .imgTopRight {
+    width: 40%;
+  }
+
+  .imgBottomLeft {
+    width: 50%;
+  }
+
+  .floatingBadge1 {
+    left: 0;
+    top: 15%;
+  }
+
+  .floatingBadge2 {
+    right: 0;
+    bottom: 10%;
+  }
+}

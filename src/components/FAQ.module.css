@@ -1,0 +1,8 @@
+.faq {
+  background: var(--color-bg);
+}
+
+.list {
+  max-width: 720px;
+  margin: 0 auto;
+}
