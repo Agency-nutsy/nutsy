@@ -20,7 +20,7 @@ const services = [
   { cat: 'Skin & Face', icon: '🧹', name: 'Cleanup', desc: 'Express face cleanup for instant freshness.', price: 'Price on request', duration: '~30 min' },
 
   // MAKEUP — confirmed from Google Maps
-  { cat: 'Makeup', icon: '👰', name: 'Bridal Makeup', desc: 'Complete bridal look by Tanvi Singh including draping assistance.', price: 'Price on request', duration: '2–3 hrs' },
+  { cat: 'Makeup', icon: '👰', name: 'Bridal Makeup', desc: 'Complete bridal look by Tanvi Jain including draping assistance.', price: 'Price on request', duration: '2–3 hrs' },
   { cat: 'Makeup', icon: '🎭', name: 'Party Makeup', desc: 'HD or Airbrush makeup for parties and special events.', price: 'Price on request', duration: '~60 min' },
   { cat: 'Makeup', icon: '💄', name: 'Engagement Makeup', desc: 'Elegant, photogenic makeup for your special day.', price: 'Price on request', duration: '~90 min' },
 

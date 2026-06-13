@@ -4,7 +4,7 @@ import styles from './Team.module.css';
 /* Team members extracted from Google reviews */
 const team = [
   {
-    name: 'Tanvi Singh',
+    name: 'Tanvi Jain',
     role: 'Founder & Makeup Artist',
     photo: '/salon/bridal-makeup.png',
     bio: 'Founder of Studio Fix, Tanvi is celebrated for her bridal artistry. Clients praise her ability to deliver exactly the look they envision — natural, elegant, and picture-perfect.',

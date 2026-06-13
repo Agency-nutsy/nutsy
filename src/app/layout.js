@@ -7,7 +7,7 @@ import WhatsAppFloat from '@/components/WhatsAppFloat';
 import LoadingScreen from '@/components/LoadingScreen';
 
 /* ============================================
-   STUDIO FIX UNISEX SALON & MAKEUP — by Tanvi Singh
+   STUDIO FIX UNISEX SALON & MAKEUP — by Tanvi Jain
    ============================================ */
 const SALON_NAME = 'Studio Fix';
 const SALON_TAGLINE = 'Luxury Hair, Makeup & Beauty Redefined';
@@ -21,7 +21,7 @@ const SALON_PIN = '110024';
 const SALON_RATING = '4.4';
 const SALON_REVIEW_COUNT = '262';
 const SALON_HOURS = 'Mo-Su 10:30-21:00';
-const SALON_OWNER = 'Tanvi Singh';
+const SALON_OWNER = 'Tanvi Jain';
 const SALON_INSTAGRAM = 'https://www.instagram.com/studiofixdelhi/';
 const SALON_GOOGLE_MAPS = 'https://maps.app.goo.gl/WP7A4nYDrUAq3Aa58';
 /* ============================================ */

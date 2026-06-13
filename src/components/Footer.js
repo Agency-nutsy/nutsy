@@ -35,7 +35,7 @@ export default function Footer() {
             </Link>
             <p className={styles.tagline}>Luxury Hair, Makeup & Beauty Redefined.</p>
             <p className={styles.blurb}>
-              Delhi&apos;s trusted unisex salon by Tanvi Singh. Expert stylists, premium services,
+              Delhi&apos;s trusted unisex salon by Tanvi Jain. Expert stylists, premium services,
               and a warm, welcoming space for everyone.
             </p>
             <div className={styles.socials}>
@@ -93,7 +93,7 @@ export default function Footer() {
         <hr className="gold-line" style={{ margin: 'var(--space-10) 0 var(--space-6)' }} />
 
         <div className={styles.bottom}>
-          <p>© {new Date().getFullYear()} Studio Fix by Tanvi Singh. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Studio Fix by Tanvi Jain. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -43,7 +43,7 @@ export default function LoadingScreen() {
         </div>
         
         <div className={styles.customLogo}>
-          <span className={styles.customLogoTop}>BY TANVI SINGH</span>
+          <span className={styles.customLogoTop}>BY TANVI JAIN</span>
           <div className={styles.customLogoMain}>
             STUDIO FIX
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: '-4px', transform: 'rotate(-45deg)' }}>

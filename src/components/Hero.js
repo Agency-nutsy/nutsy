@@ -84,7 +84,7 @@ export default function Hero() {
             </h1>
 
             <p className={styles.subtitle}>
-              Step into Studio Fix by Tanvi Singh — where luxury meets precision. From stunning bridal transformations to expert hair makeovers, we craft bespoke beauty experiences that reveal the most confident you.
+              Step into Studio Fix by Tanvi Jain — where luxury meets precision. From stunning bridal transformations to expert hair makeovers, we craft bespoke beauty experiences that reveal the most confident you.
             </p>
 
             <div className={styles.ctas}>
@@ -129,8 +129,8 @@ export default function Hero() {
               
               <div className={`${styles.imgWrap} ${styles.imgMain}`}>
                 <img
-                  src="/salon/reception-desk.jpg"
-                  alt="Studio Fix reception area with crystal chandelier and marble desk in Amar Colony, Delhi"
+                  src="/interior/5.png"
+                  alt="Studio Fix interior view in Amar Colony, Delhi"
                   loading="eager"
                   decoding="async"
                 />
@@ -138,8 +138,8 @@ export default function Hero() {
               
               <div className={`${styles.imgWrap} ${styles.imgTopRight}`}>
                 <img
-                  src="/salon/styling-stations.png"
-                  alt="Professional styling stations with gold-framed mirrors at Studio Fix, Delhi"
+                  src="/interior/6.png"
+                  alt="Professional styling stations at Studio Fix, Delhi"
                   loading="lazy"
                   decoding="async"
                 />
@@ -147,8 +147,8 @@ export default function Hero() {
               
               <div className={`${styles.imgWrap} ${styles.imgBottomLeft}`}>
                 <img
-                  src="/salon/bridal-makeup.png"
-                  alt="Bridal makeup session at Studio Fix by Tanvi Singh, Delhi"
+                  src="/interior/7.png"
+                  alt="Interior ambiance at Studio Fix, Delhi"
                   loading="lazy"
                   decoding="async"
                 />

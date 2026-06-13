@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: 'Do you do bridal makeup?',
-    a: 'Absolutely! Bridal makeup is one of our specialties. Tanvi Singh personally handles bridal bookings. We offer complete bridal packages from pre-bridal prep to your wedding day look.',
+    a: 'Absolutely! Bridal makeup is one of our specialties. Tanvi Jain personally handles bridal bookings. We offer complete bridal packages from pre-bridal prep to your wedding day look.',
   },
   {
     q: 'What are the working hours?',

@@ -25,7 +25,7 @@ const packages = [
     duration: '45-day complete package',
     items: [
       'Everything in Radiance Package',
-      'Bridal Makeup (HD/Airbrush by Tanvi Singh)',
+      'Bridal Makeup (HD/Airbrush by Tanvi Jain)',
       'Saree/Lehenga Draping',
       'Hair Styling (bridal updo or open style)',
       'Mehendi Function Makeup',
@@ -60,7 +60,7 @@ const features = [
 ];
 
 const portfolioImages = [
-  { src: '/salon/bridal-makeup.png', caption: 'Bridal Makeup by Tanvi Singh' },
+  { src: '/salon/bridal-makeup.png', caption: 'Bridal Makeup by Tanvi Jain' },
   { src: '/salon/hair-styling.png', caption: 'Bridal Hair Styling' },
   { src: '/salon/keratin-treatment.png', caption: 'Pre-Bridal Hair Treatment' },
   { src: '/salon/facial-treatment.png', caption: 'Pre-Bridal Gold Facial' },
@@ -79,7 +79,7 @@ export default function Bridal() {
           <span className="section-label">BRIDAL COLLECTION</span>
           <h2 className={styles.bridalTitle}>Bridal Beauty — Your Most <span className="gold-text">Precious</span> Day</h2>
           <p className="section-subtitle">
-            From pre-bridal glow treatments to the final bridal look on your big day — Tanvi Singh and the Studio Fix team craft
+            From pre-bridal glow treatments to the final bridal look on your big day — Tanvi Jain and the Studio Fix team craft
             a complete bridal journey tailored to you.
           </p>
         </div>

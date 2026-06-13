@@ -214,6 +214,11 @@
   animation-delay: 0.4s;
 }
 
+.imgMain img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
 /* 2. Top Right Accent Image */
 .imgTopRight {
   width: 45%;
@@ -228,10 +233,9 @@
 .imgBottomLeft {
   width: 50%;
   height: auto;
-  top: 55%;
+  top: 45%;
   right: 15%;
   z-index: 3;
-  border: 6px solid var(--color-bg);
   animation-delay: 0.8s;
 }
 

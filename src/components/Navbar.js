@@ -63,7 +63,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className={styles.logo} aria-label="Studio Fix Home">
           <div className={styles.customLogo}>
-            <span className={styles.customLogoTop}>BY TANVI SINGH</span>
+            <span className={styles.customLogoTop}>BY TANVI JAIN</span>
             <div className={styles.customLogoMain}>
               STUDIO FIX
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: '-2px', transform: 'rotate(-45deg)' }}>

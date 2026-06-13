@@ -4,14 +4,14 @@ import styles from './BeforeAfter.module.css';
 
 const transformations = [
   {
-    before: '/salon/bridal-makeup-before.png',
-    after: '/salon/bridal-makeup.png',
-    label: 'Bridal Makeup Transformation',
+    before: '/interior/2.png',
+    after: '/interior/1.png',
+    label: 'Salon Interior Transformation',
   },
   {
-    before: '/salon/hair-styling.png',
-    after: '/salon/keratin-treatment.png',
-    label: 'Hair Makeover — Keratin & Colour',
+    before: '/interior/3.png',
+    after: '/interior/4.png',
+    label: 'Studio Makeover — Complete Setup',
   },
 ];
 

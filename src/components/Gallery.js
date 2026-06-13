@@ -7,7 +7,7 @@ const images = [
   { src: '/salon/hero-interior.png', alt: 'Studio Fix interior with styling chairs and wash basins in Delhi', cat: 'Interior', caption: 'Styling & Wash Stations' },
   { src: '/salon/styling-stations.png', alt: 'Gold-framed mirrors and premium styling stations at Studio Fix', cat: 'Interior', caption: 'Premium Styling Stations' },
   { src: '/salon/interior-wide.png', alt: 'Elegant wide view of Studio Fix salon interior with arched decor', cat: 'Interior', caption: 'Salon Ambience' },
-  { src: '/salon/bridal-makeup.png', alt: 'Bridal makeup session at Studio Fix by Tanvi Singh, Delhi', cat: 'Transformations', caption: 'Bridal Makeup by Tanvi Singh' },
+  { src: '/salon/bridal-makeup.png', alt: 'Bridal makeup session at Studio Fix by Tanvi Jain, Delhi', cat: 'Transformations', caption: 'Bridal Makeup by Tanvi Jain' },
   { src: '/salon/hair-styling.png', alt: 'Professional hair coloring and balayage at Studio Fix, Delhi', cat: 'Transformations', caption: 'Balayage Hair Colour' },
   { src: '/salon/keratin-treatment.png', alt: 'Keratin treatment results at Studio Fix salon, Delhi', cat: 'Transformations', caption: 'Keratin Smoothening' },
   { src: '/salon/facial-treatment.png', alt: 'Relaxing facial treatment at Studio Fix, Amar Colony Delhi', cat: 'Team at Work', caption: 'Gold Facial Treatment' },
